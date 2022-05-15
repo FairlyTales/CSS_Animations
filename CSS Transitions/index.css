@@ -11,11 +11,12 @@
   color: white;
   width: 100px;
   opacity: 1;
-  /* transition-property: background-color, color, width; */
-  /* transition-duration: 0.2s; */
-  /* transition-delay: 0.1s; */
-  /* transition-timing-function: ease-out; */
-  transition: width 0.2s linear 0.1s, background-color 0.5s ease-out, color 0.5s ease-in;
+  transition-property: background-color, color, width;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+  /* transition-timing-function: cubic-bezier(0.72, -0.21, 0.37, 1.42); */
+  transition-timing-function: steps(4);
+  /* transition: width 0.2s linear 0.1s, background-color 0.5s ease-out, color 0.5s ease-in; */
 }
 
 .button:hover {
