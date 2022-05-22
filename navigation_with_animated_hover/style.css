@@ -1,3 +1,7 @@
+:root {
+  --primary: #00b6ff;
+}
+
 body {
   background-color: #dcf5ff;
 }
@@ -21,5 +25,38 @@ a {
   padding: 10px;
   position: relative;
   text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
+span {
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+a::after {
+  content: '';
+
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+
+  height: 2px;
+  width: 100%;
+
+  background-color: var(--primary);
+
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+a:hover span {
+  transform: translateY(-3px);
+}
+
+a:hover::after {
+  transform: scale(1);
+}
