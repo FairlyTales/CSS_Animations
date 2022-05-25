@@ -33,6 +33,11 @@ body {
 }
 
 .button {
+  color: var(--primary);
+  border: solid 2px var(--primary);
+  transform: perspective(1px);
+  transition: color 0.3s ease-in-out;
+
   background: none;
   box-shadow: 0 5px 15px -5px #bbb;
   cursor: pointer;
@@ -43,4 +48,102 @@ body {
   position: relative;
   width: 150px;
   overflow: hidden;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button::before {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  content: '';
+
+  background-color: var(--primary);
+  z-index: -1;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.button--one::before {
+  transform-origin: 0 0;
+  transform: scaleX(0);
+}
+
+.button--one:hover::before {
+  transform: scaleX(1);
+}
+
+.button--two::before {
+  transform-origin: 0 0;
+  transform: scaleY(0);
+}
+
+.button--two:hover::before {
+  transform: scaleY(1);
+}
+
+.button--three::before {
+  transform: scaleX(0);
+}
+
+.button--three:hover::before {
+  transform: scaleX(1);
+}
+
+.button--four::before {
+  transform: scaleY(0);
+}
+
+.button--four:hover::before {
+  transform: scaleY(1);
+}
+
+.button--five::before {
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(0);
+}
+
+.button--five:hover::before {
+  transform: translate(-50%, -50%) rotate(135deg) scale(4.5);
+}
+
+.button--five:active::before {
+  transform: translate(-50%, -50%) rotate(135deg) scale(10);
+}
+
+.button--six {
+  height: 75px;
+  width: 75px;
+  border-radius: 20px;
+}
+
+.button--six::before {
+  left: 50%;
+  top: 50%;
+  width: 130%;
+  transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+}
+
+.button--six .button__icon {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+
+.button--six:hover::before {
+  transform: translate(-50%, -50%) rotate(45deg) scaleY(2.5);
+}
+
+.button--six:hover .button__icon {
+  transform: scale(1);
+}
+
+.button--six:active::before {
+  transform: translate(-50%, -50%) rotate(45deg) scaleY(1.5);
 }
