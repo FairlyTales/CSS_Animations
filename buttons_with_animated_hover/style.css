@@ -1,3 +1,7 @@
+:root {
+  --primary: #25abd9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,6 +33,8 @@ body {
 }
 
 .button {
+  color: var(--primary);
+  border: solid 2px var(--primary);
   background: none;
   box-shadow: 0 5px 15px -5px #bbb;
   cursor: pointer;
@@ -38,10 +44,29 @@ body {
   padding: 5px;
   position: relative;
   width: 150px;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+
+.button::before {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  content: '';
+
+  background-color: var(--primary);
+  z-index: -1;
 }
 
 .button--six {
-  border-radius: 20px;
   height: 75px;
   width: 75px;
+  border-radius: 20px;
+}
+
+.button--one {
+  
 }
