@@ -37,8 +37,34 @@ body {
   padding: 5px;
   position: relative;
   width: 75px;
+  transition: text-shadow 0.5s ease-out;
 }
 
 .button__icon {
   color: #777;
+  transition: color 0.5s ease-out;
+}
+
+.button:hover {
+  animation: neonFlow 1s infinite alternate;
+  text-shadow: 0 0 15px var(--primary);
+}
+
+.button:hover .button__icon {
+  color: var(--primary);
+}
+
+.button:active .button__icon {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+@keyframes neonFlow {
+  0% {
+    box-shadow: 0 0 10px var(--primary);
+  }
+
+  100% {
+    box-shadow: 0 0 30px var(--primary);
+  }
 }
