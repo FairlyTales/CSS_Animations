@@ -17,17 +17,17 @@ body {
 .play {
   height: 135px;
   width: 135px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   text-decoration: none;
-  
+
   border-radius: 50%;
   box-shadow: 0 0 0 13px var(--primary);
-  
-  transition: box-shadow .3s ease;
+
+  transition: box-shadow 0.3s ease;
   overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .play:hover .play__icon {
-  animation: iconSwipe .4s ease-in-out;
+  animation: iconSwipe 0.4s ease-in-out;
 }
 
 @keyframes iconSwipe {
