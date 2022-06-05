@@ -17,19 +17,48 @@ body {
 .play {
   height: 135px;
   width: 135px;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   text-decoration: none;
-
+  
   border-radius: 50%;
   box-shadow: 0 0 0 13px var(--primary);
+  
+  transition: box-shadow .3s ease;
+  overflow: hidden;
 }
 
 .play__icon {
   color: #fff;
   font-size: 50px;
   transform: translate(5px);
+}
+
+.play:hover {
+  box-shadow: 0 0 0 15px var(--primary);
+}
+
+.play:hover .play__icon {
+  animation: iconSwipe .4s ease-in-out;
+}
+
+@keyframes iconSwipe {
+  0% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(120px);
+  }
+
+  51% {
+    transform: translateX(-120px);
+  }
+
+  100% {
+    transform: translateX(5px);
+  }
 }
