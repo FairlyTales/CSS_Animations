@@ -33,5 +33,19 @@ body {
   padding: 5px;
   text-transform: uppercase;
   width: 150px;
+
+  box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -3px black;
+
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
+.button:hover,
+.button:focus {
+  opacity: .8;
+  outline: 0;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(6px);
+}
