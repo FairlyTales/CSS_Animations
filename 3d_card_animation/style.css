@@ -1,0 +1,77 @@
+:root {
+  --primary: #25abd9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dcf5ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card__image--1 {
+  background-image: url('https://images.pexels.com/photos/3565601/pexels-photo-3565601.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+}
+
+.card__image--2 {
+  background-image: url('https://images.pexels.com/photos/1122639/pexels-photo-1122639.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+}
+
+.card__image--3 {
+  background-image: url('https://images.pexels.com/photos/3750768/pexels-photo-3750768.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+}
+
+.card__header,
+.card__text {
+  color: #fff;
+  font-family: Montserrat, serif;
+  position: relative;
+}
+
+.card__header {
+  backface-visibility: hidden;
+}
+
+.social-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 80%;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__anchor {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+/* Hover */
+
+.social__anchor:hover {
+  color: var(--primary);
+}
