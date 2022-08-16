@@ -1,0 +1,112 @@
+:root {
+  --primary: #25abd9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dcf5ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px 2px #ccc;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
+  padding: 40px;
+  width: 500px;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-container {
+  position: relative;
+  width: 90%;
+}
+
+.input-icon {
+  position: absolute;
+  left: -45px;
+  top: 70px;
+  font-size: 24px;
+  transition: color .2s ease-in-out;
+}
+
+.input-label {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 100%;
+}
+
+.input-label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -36px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary);
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  transition: transform .2s ease-in-out;
+}
+
+.input-label__name {
+  font-family: Montserrat, serif;
+  font-size: 24px;
+  transition: all .2s ease-in-out;
+}
+
+.input {
+  position: relative;
+  top: 65px;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  font-family: Montserrat, serif;
+  font-size: 24px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:focus + .input-label::after {
+  transform: scaleX(1);
+}
+
+.input:focus + .input-label .input-label__name {
+  transform: translateY(-10px);
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.input:focus ~ .input-icon {
+  color: var(--primary);
+}
