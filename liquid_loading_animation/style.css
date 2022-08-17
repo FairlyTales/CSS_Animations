@@ -1,0 +1,62 @@
+:root {
+  --primary: #25abd9;
+  --background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+
+.container {
+  align-items: center;
+  background: var(--background);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: solid 4px var(--primary);
+  background-color: var(--primary);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160%;
+  height: 160%;
+  background-color: var(--background);
+  border-radius: 40%;
+  animation: liquid 6s ease-in-out forwards;
+}
+
+.cirlce__icon {
+  color: var(--background);
+  font-size: 70px;
+}
+
+@keyframes liquid {
+  0% {
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -100%) rotate(500deg);
+  }
+}
