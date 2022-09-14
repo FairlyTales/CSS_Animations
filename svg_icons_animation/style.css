@@ -1,0 +1,140 @@
+:root {
+  --background: #333;
+  --grey: #777;
+  --primary: #25abd9;
+  --active: #118db7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  margin: auto;
+  width: 1000px;
+}
+
+.icon {
+  width: 200px;
+}
+
+.icon path {
+  fill: transparent;
+  stroke: var(--grey);
+  stroke-width: 10px;
+}
+
+.icon.tree svg {
+  stroke-dasharray: 1860px;
+  stroke-dashoffset: 0;
+}
+
+.icon.tree:hover svg path {
+  animation: tree 2s linear forwards;
+}
+
+.icon.bolt svg {
+  stroke-dasharray: 1550px;
+  stroke-dashoffset: 0;
+}
+
+.icon.bolt:hover svg path {
+  animation: bolt 2s linear forwards;
+}
+
+.icon.glass svg {
+  stroke-dasharray: 2100px;
+  stroke-dashoffset: 0;
+}
+
+.icon.glass:hover svg path {
+  animation: glass 2s linear forwards;
+}
+
+@keyframes tree {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 1860px;
+    stroke: var(--grey);
+  }
+
+  41% {
+    stroke: var(--primary);
+  }
+
+  80% {
+    fill: transparent;
+    stroke-dashoffset: 3720px;
+  }
+
+  100% {
+    fill: var(--primary);
+    stroke: var(--primary);
+    stroke-dashoffset: 3720px;
+  }
+}
+
+@keyframes bolt {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 1550px;
+    stroke: var(--grey);
+  }
+
+  41% {
+    stroke: var(--primary);
+  }
+
+  80% {
+    fill: transparent;
+    stroke-dashoffset: 3100px;
+  }
+
+  100% {
+    fill: var(--primary);
+    stroke: var(--primary);
+    stroke-dashoffset: 3100px;
+  }
+}
+
+@keyframes glass {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 2100px;
+    stroke: var(--grey);
+  }
+
+  41% {
+    stroke: var(--primary);
+  }
+
+  80% {
+    fill: transparent;
+    stroke-dashoffset: 4200px;
+  }
+
+  100% {
+    fill: var(--primary);
+    stroke: var(--primary);
+    stroke-dashoffset: 4200px;
+  }
+}
