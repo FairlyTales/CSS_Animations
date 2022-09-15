@@ -72,15 +72,15 @@ body {
 }
 
 .card__image--1 {
-  background-image: url('https://images.pexels.com/photos/3565601/pexels-photo-3565601.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-image: url('./pexels-photo-1122639.jpeg');
 }
 
 .card__image--2 {
-  background-image: url('https://images.pexels.com/photos/1122639/pexels-photo-1122639.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-image: url('./pexels-photo-3565601.jpeg');
 }
 
 .card__image--3 {
-  background-image: url('https://images.pexels.com/photos/3750768/pexels-photo-3750768.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-image: url('./pexels-photo-3750768.jpeg');
 }
 
 .card__header,
