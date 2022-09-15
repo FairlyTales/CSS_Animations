@@ -40,6 +40,8 @@ body {
 
 .card__face {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -47,8 +49,20 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  background-color: #000;
   overflow: hidden;
+  background: no-repeat 50% / cover;
+}
+
+.card__face--1 {
+  background-image: url('./pexels-photo-1122639.jpeg');
+}
+
+.card__face--2 {
+  background-image: url('./pexels-photo-3565601.jpeg');
+}
+
+.card__face--3 {
+  background-image: url('./pexels-photo-3750768.jpeg');
 }
 
 .card__face--front {
@@ -68,7 +82,6 @@ body {
   height: 100%;
   width: 100%;
   background: no-repeat 50% / cover;
-  
 }
 
 .card__image--1 {
