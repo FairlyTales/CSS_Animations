@@ -1,5 +1,10 @@
 {
-	"devDependencies": {
-		"tailwindcss": "^3.1.8"
-	}
+  "name": "css_animations",
+  "version": "1.0.0",
+  "description": "vanilla_css_animations",
+  "author": "khnychkin_kirill",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
