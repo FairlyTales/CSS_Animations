@@ -5,7 +5,7 @@
 .squareThingy {
   animation-name: shape-animation;
   animation-duration: 2s;
-  animation-fill-mode: ;
+  /*animation-fill-mode: */
   /* animation-iteration-count: infinite; */
 
   display: flex;

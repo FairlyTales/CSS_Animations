@@ -17,7 +17,7 @@ const scrollFade = () => {
   texts.forEach((text) => {
     const textPosition = text.getBoundingClientRect().top;
 
-    if (textPosition < windowHeight / 1) {
+    if (textPosition < windowHeight) {
       text.classList.toggle('intro__text--active');
     }
   });
