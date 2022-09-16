@@ -8,11 +8,11 @@
 
 h1,
 h2 a {
+  font-weight: 600 !important;
   color: #3d3d3d;
 }
 
 h2 a:hover {
   color: #000000;
-
   transition: all .3s ease-in-out;
 }
