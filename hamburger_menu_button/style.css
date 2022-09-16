@@ -195,7 +195,7 @@ body {
   animation: burger3__bottom-line--active .5s ease-in-out forwards;
 }
 
-/* active state animations */
+/* active state buttons */
 @keyframes burger3__top-line--active {
   0% {
     transform: translateY(0);
@@ -238,7 +238,7 @@ body {
   }
 }
 
-/* non-active state animations */
+/* non-active state buttons */
 @keyframes burger3__top-line--nonActive {
   0% {
     transform: translateY(16px) rotate(-315deg);

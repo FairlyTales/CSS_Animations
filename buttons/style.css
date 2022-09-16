@@ -41,7 +41,7 @@ body {
   background: none;
   box-shadow: 0 5px 15px -5px #bbb;
   cursor: pointer;
-  font-family: roboto;
+  font-family: roboto, sans-serif;
   font-size: 14px;
   height: 50px;
   padding: 5px;
