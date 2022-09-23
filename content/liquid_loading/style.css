@@ -46,7 +46,7 @@ body {
   animation: liquid 6s ease-in-out forwards;
 }
 
-.cirlce__icon {
+.circle__icon {
   color: var(--background);
   font-size: 70px;
 }
