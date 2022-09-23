@@ -8,9 +8,10 @@ body {
 }
 
 .container {
-  align-items: center;
-  display: flex;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .svg {
