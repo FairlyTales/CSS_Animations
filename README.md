@@ -1,6 +1,5 @@
 # CSS Animations
 
-Playing with CSS animations and making cool stuff.
+Playing with CSS animations and making cool stuff using vanilla html, css and js.
 
-Projects were created in VS Code using the Live Server extension, thus no dev server, node modules or any package bundler.
-Just pure HTML, CSS and JS.
+<a href="https://fairlytales.github.io/CSS_Animations/">You can check these project live on this page</a>
