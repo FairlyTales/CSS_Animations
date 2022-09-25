@@ -16,3 +16,7 @@ h2 a:hover {
   color: #000000;
   transition: all .3s ease-in-out;
 }
+
+.card {
+  width: 100%;
+}
