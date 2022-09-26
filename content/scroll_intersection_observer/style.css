@@ -40,6 +40,8 @@ section {
 }
 
 .logo {
+  min-width: 125px;
+  min-height: 129px;
   transition-delay: calc(.2s * var(--order));
 }
 
